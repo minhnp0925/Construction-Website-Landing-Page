@@ -1,0 +1,56 @@
+.bg-dark {
+    background-color: #050505 !important;
+}
+
+/* Navbar stuff */
+.container-1080 {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 80px !important;
+}
+
+.navbar .navbar-brand img {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar-nav .nav-item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-dark .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease, color 0.3s ease !important;
+}
+
+.navbar-dark .nav-link:hover {
+    color: #f5a623 !important;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.contact-us {
+    border: 2px solid #f5a623;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-us:hover {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+/* Font */
+.raleway-navbar {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
