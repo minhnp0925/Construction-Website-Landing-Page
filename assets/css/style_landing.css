@@ -1,5 +1,142 @@
-.bg-dark {
-    background-color: #050505 !important;
+/* Font */
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.roboto-thin {
+    font-family: "Roboto", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.montserrat-bold {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Theme colors */
+:root {
+    --theme-primary: #34A853;
+    --theme-secondary: #fb8c00;
+    --theme-bg-white: #fff;
+    --theme-bg-gray: #f5f5f5;
+    --theme-bg-black: #000;
+    --theme-text-white: #fff;
+    --theme-text-gray: #333;
+    --theme-text-black: #000;
+}
+
+.theme-bg-gray {
+    background-color: var(--theme-bg-gray);
+}
+.theme-bg-white {
+    background-color: var(--theme-bg-white);
+}
+.theme-bg-black {
+    background-color: var(--theme-bg-black);
+}
+.theme-text-gray {
+    background-color: var(--theme-text-gray);
+}
+.theme-text-white {
+    background-color: var(--theme-text-white);
+}
+.theme-text-black {
+    background-color: var(--theme-text-black);
+}
+/* Reveal */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 /* Navbar stuff */
@@ -10,11 +147,12 @@
 
 .navbar {
     height: 80px !important;
+    background-color: var(--theme-primary);
 }
 
 .navbar .navbar-brand img {
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
 }
 
 .navbar-nav .nav-item {
@@ -22,13 +160,13 @@
     text-align: center;
 }
 
-.navbar-dark .nav-link {
-    color: #fff !important;
+.navbar .nav-link {
+    color: var(--theme-text-white) !important;
     transition: color 0.3s ease, color 0.3s ease !important;
 }
 
-.navbar-dark .nav-link:hover {
-    color: #f5a623 !important;
+.navbar .nav-link:hover {
+    text-decoration: underline var(--theme-secondary);
 }
 
 .nav-link {
@@ -36,21 +174,360 @@
 }
 
 .contact-us {
-    border: 2px solid #f5a623;
+    border: 2px solid var(--theme-secondary);
     border-radius: 5px;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-us:hover {
-    background-color: #f5a623;
+    background-color: var(--theme-secondary);
+    color: var(--theme-text-white);
+}
+
+/* Hero */
+.hero-section {
+    background-image: url('../images/banner.png'); /* Replace with your actual image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh; /* Full viewport height */
+    position: relative;
+    color: var(--theme-text-white);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+}
+
+/* Services */
+/* General Styling */
+.service-card {
+    position: relative;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent dark overlay */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Text Styling */
+.service-title {
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.service-description {
+    font-size: 1rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.btn-cta {
+    display: inline-block;
+    background-color: var(--theme-secondary);
+    color: var(--theme-bg-white);
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--theme-primary);
+    transform: translateY(-2px);
+}
+
+/* Testimonials */
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-author {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000; /* Black color for better visibility */
+    border-radius: 50%;    /* Optional: Make them circular */
+    width: 40px;           /* Optional: Adjust size */
+    height: 40px;
+}
+
+/* Optional: Add hover effect */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: var(--theme-primary); /* Green color on hover */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Default indicator styles */
+.carousel-indicators {
+    bottom: -20px;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #000; /* Black color for better visibility */
+    width: 12px;            /* Adjust size */
+    height: 12px;
+    border-radius: 50%;     /* Make them circular */
+    opacity: 0.7;           /* Semi-transparent for a sleek look */
+}
+
+/* Active indicator */
+.carousel-indicators .active {
+    background-color: var(--theme-primary); /* Green for the active state */
+    opacity: 1;               /* Fully opaque */
+}
+
+/* Optional: Hover effect */
+.carousel-indicators [data-bs-target]:hover {
+    background-color: var(--theme-secondary); /* Orange on hover */
+    opacity: 1;               /* Fully opaque on hover */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Contact us */
+.contact-section {
+    background-color: var(--theme-secondary);
+}
+
+.contact-info {
+    background-color: var(--theme-bg-white);
+    border-radius: 5px;
+}
+
+.contact-header, .form-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--theme-primary);
+}
+
+.contact-body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--theme-text-gray);
+}
+
+.contact-details p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--theme-text-gray);
+}
+
+.contact-details a {
+    text-decoration: none;
+}
+
+.contact-form {
+    border-radius: 5px;
+}
+
+.form-label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--theme-text-gray);
+}
+
+.form-control {
+    border-radius: 5px;
+    background-color: var(--theme-bg-gray);
+    color: var(--theme-text-gray);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--theme-primary);
+    box-shadow: 0 0 8px rgba(52, 168, 83, 0.4);
+}
+
+.btn-success {
+    background-color: var(--theme-primary);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: var(--theme-secondary);
     color: #fff;
 }
 
-/* Font */
-.raleway-navbar {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
+.social-header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: #FB8C00;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #34A853;
+    color: #FFFFFF;
+}
+
+/* Footer */
+/* General Styles */
+.footer-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #34A853;
+}
+
+.footer-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.footer-link:hover {
+    color: #34A853;
+    text-decoration: underline;
+}
+
+/* Newsletter Form */
+.input-group .form-control {
+    background-color: #F5F5F5;
+    border: 1px solid #34A853;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-group .btn-orange {
+    background-color: #FB8C00;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 0 5px 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.input-group .btn-orange:hover {
+    background-color: #34A853;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    background-color: #333333;
+}
+
+.footer-bottom p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.back-to-top {
+    width: 40px;
+    height: 40px;
+    background-color: #34A853;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #FB8C00;
 }
