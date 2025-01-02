@@ -1,56 +1,110 @@
 /* Font */
-.poppins-thin {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-thin {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 100;
     font-style: normal;
 }
 
-.poppins-extralight {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-extralight {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 200;
     font-style: normal;
 }
 
-.poppins-light {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-light {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.poppins-regular {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-regular {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.poppins-medium {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-medium {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 500;
     font-style: normal;
 }
 
-.poppins-semibold {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-semibold {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 600;
     font-style: normal;
 }
 
-.poppins-bold {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-bold {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.poppins-extrabold {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-extrabold {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 800;
     font-style: normal;
 }
 
-.poppins-black {
-    font-family: "Poppins", serif;
+.be-vietnam-pro-black {
+    font-family: "Be Vietnam Pro", serif;
     font-weight: 900;
     font-style: normal;
+}
+
+.be-vietnam-pro-thin-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.be-vietnam-pro-extralight-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.be-vietnam-pro-light-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.be-vietnam-pro-regular-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.be-vietnam-pro-medium-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.be-vietnam-pro-semibold-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.be-vietnam-pro-bold-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.be-vietnam-pro-extrabold-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.be-vietnam-pro-black-italic {
+    font-family: "Be Vietnam Pro", serif;
+    font-weight: 900;
+    font-style: italic;
 }
   
 .roboto-thin {
@@ -146,13 +200,33 @@
 }
 
 .navbar {
-    height: 80px !important;
     background-color: var(--theme-primary);
 }
 
-.navbar .navbar-brand img {
-    height: 70px;
-    width: 70px;
+/* Fix for navbar-toggler-icon */
+.navbar-toggler {
+    border-color: var(--theme-text-white); /* Optional: Make button border visible */
+}
+
+.navbar-toggler-icon {
+    background-color: var(--theme-text-white); /* White background for toggle icon */
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler-icon:hover {
+    background-color: var(--theme-secondary); /* Add hover effect for visibility */
+}
+
+/* Make logo responsive */
+.navbar .navbar-logo {
+    display: flex;
+    align-items: center;
+    
+    img {
+        max-height: 60px;
+        max-width: 100%; /* Ensures logo scales with the parent container */
+    }
 }
 
 .navbar-nav .nav-item {
@@ -162,11 +236,6 @@
 
 .navbar .nav-link {
     color: var(--theme-text-white) !important;
-    transition: color 0.3s ease, color 0.3s ease !important;
-}
-
-.navbar .nav-link:hover {
-    text-decoration: underline var(--theme-secondary);
 }
 
 .nav-link {
@@ -177,17 +246,13 @@
     border: 2px solid var(--theme-secondary);
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.contact-us:hover {
     background-color: var(--theme-secondary);
     color: var(--theme-text-white);
 }
 
 /* Hero */
 .hero-section {
-    background-image: url('../images/banner.png'); /* Replace with your actual image URL */
+    background-image: url('../images/hero.jpg'); /* Replace with your actual image URL */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,17 +327,17 @@
 .btn-cta {
     display: inline-block;
     background-color: var(--theme-secondary);
-    color: var(--theme-bg-white);
+    color: var(--theme-text-white);
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 5px;
     text-transform: uppercase;
-    text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-cta:hover {
     background-color: var(--theme-primary);
+    color: var(--theme-text-white) !important;
     transform: translateY(-2px);
 }
 
@@ -352,20 +417,20 @@
 }
 
 .contact-header, .form-header {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Be Vietnam Pro', serif;
     font-size: 28px;
     font-weight: 600;
     color: var(--theme-primary);
 }
 
 .contact-body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Be Vietnam Pro', serif;
     font-size: 16px;
     color: var(--theme-text-gray);
 }
 
 .contact-details p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-size: 16px;
     color: var(--theme-text-gray);
 }
@@ -379,7 +444,7 @@
 }
 
 .form-label {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-weight: bold;
     font-size: 14px;
     color: var(--theme-text-gray);
@@ -412,7 +477,7 @@
 }
 
 .social-header {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', serif;
     font-size: 20px;
     font-weight: bold;
     color: #FFFFFF;
@@ -432,7 +497,7 @@
     width: 40px;
     height: 40px;
     background-color: #FFFFFF;
-    color: #FB8C00;
+    color: var(--theme-secondary);
     border-radius: 50%;
     text-decoration: none;
     font-size: 18px;
@@ -440,28 +505,28 @@
 }
 
 .social-link:hover {
-    background-color: #34A853;
+    background-color: var(--theme-primary);
     color: #FFFFFF;
 }
 
 /* Footer */
 /* General Styles */
 .footer-logo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', serif;
     font-size: 28px;
     font-weight: bold;
-    color: #34A853;
+    color: var(--theme-primary);
 }
 
 .footer-description {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-size: 16px;
     color: #333333;
     line-height: 1.6;
 }
 
 .footer-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-size: 18px;
     font-weight: bold;
     color: #333333;
@@ -472,7 +537,7 @@
 }
 
 .footer-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-size: 14px;
     font-weight: bold;
     color: #333333;
@@ -481,19 +546,19 @@
 }
 
 .footer-link:hover {
-    color: #34A853;
+    color: var(--theme-primary);
     text-decoration: underline;
 }
 
 /* Newsletter Form */
 .input-group .form-control {
     background-color: #F5F5F5;
-    border: 1px solid #34A853;
+    border: 1px solid var(--theme-primary);
     border-radius: 5px 0 0 5px;
 }
 
 .input-group .btn-orange {
-    background-color: #FB8C00;
+    background-color: var(--theme-secondary);
     border: none;
     color: #FFFFFF;
     border-radius: 0 5px 5px 0;
@@ -503,7 +568,7 @@
 }
 
 .input-group .btn-orange:hover {
-    background-color: #34A853;
+    background-color: var(--theme-primary);
 }
 
 /* Bottom Section */
@@ -512,7 +577,7 @@
 }
 
 .footer-bottom p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', serif;
     font-size: 14px;
     color: #FFFFFF;
 }
@@ -520,7 +585,7 @@
 .back-to-top {
     width: 40px;
     height: 40px;
-    background-color: #34A853;
+    background-color: var(--theme-primary);
     color: #FFFFFF;
     border-radius: 50%;
     text-decoration: none;
@@ -529,5 +594,5 @@
 }
 
 .back-to-top:hover {
-    background-color: #FB8C00;
+    background-color: var(--theme-secondary);
 }

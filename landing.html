@@ -15,36 +15,39 @@
         <title>Landing page</title>
         <!-- Font -->
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
+            
             
 
 
     </head>
     <body>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg sticky-top py-4">
+        <nav class="navbar navbar-expand-lg sticky-top py-2">
             <div class="container container-1080">
-                <a class="navbar-brand text-start" href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#">
+                    <span class="navbar-logo"><img src="assets/images/logo.png" alt="logo"></span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse align-items-center" id="navbarContent">
                     <ul class="navbar-nav ms-auto d-flex mb-2 mb-lg-0 montserrat-bold align-items-center">
                         <li class="nav-item mx-3">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="#">GIỚI THIỆU</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">SERVICES</a>
+                            <a class="nav-link" href="#">DỊCH VỤ</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link" href="#">PROJECTS</a>
+                            <a class="nav-link" href="#">DỰ ÁN</a>
                         </li>
                         <li class="nav-item mx-3">
-                            <a class="nav-link contact-us" href="#contact-us">CONTACT US</a>
+                            <a class="nav-link contact-us" href="#contact-us">LIÊN HỆ</a>
                         </li>
                     </ul>
                 </div>
@@ -54,31 +57,33 @@
         <!-- Hero section -->
         <section class="hero-section d-flex align-items-center text-center text-white">
             <div class="container">
-                <h1 class="display-4 poppins-bold">Welcome to Our Website</h1>
-                <p class="lead mt-3 roboto-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur cursus, nisl eros facilisis lacus, sed viverra ligula nunc et turpis.</p>
-            </div>
+                <h1 class="display-4 be-vietnam-pro-bold">CÔNG TY XÂY DỰNG KHANG AN GIA </h1>
+                <p class="lead mt-3 roboto-regular">Công ty chúng tôi nhận Thiết kế, thi công xây dựng, nội thất trọn gói.<br/>
+                    Đồng thời công ty chúng tôi cũng chuyên cung cấp đèn gỗ hiện đại cho công trình, dự án.</p>
+            <!-- </div> -->
         </section>
             
-        <section class="py-5 theme-bg-gray">
-            <div class="container container-1080 text-start">
-                <h2 class="mb-4 poppins-bold">About Our Company</h2>
-                <p class="mb-4 lead roboto-regular">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula neque at eleifend semper. Pellentesque varius neque nec volutpat pellentesque. Aenean orci felis, elementum a scelerisque vitae, fringilla eu eros. Suspendisse ac ante porttitor lorem posuere luctus ut sit amet diam. Quisque eros sem, condimentum ac tristique sit amet, elementum eget tellus. Sed lacinia, nunc eget dignissim convallis, odio sem facilisis felis, eu mollis augue enim et felis. Praesent feugiat aliquet sem pharetra aliquam. In non sodales mauris, et dignissim risus. 
-                </p>
-            </div>
-        </section>
+        <!-- <section class="py-5 theme-bg-gray"> -->
+            <!-- <div class="container container-1080 text-start"> -->
+                <!-- <!~~ <h2 class="mb-4 be-vietnam-pro-bold">About Our Company</h2> ~~> -->
+                <!-- <p class="mb-4 lead roboto-bold"> -->
+                    <!-- Công ty chúng tôi nhận Thiết kế, thi công xây dựng, nội thất trọn gói. -->
+                    <!-- Đồng thời công ty chúng tôi cũng chuyên cung cấp đèn gỗ hiện đại cho công trình, dự án.                 -->
+                <!-- </p> -->
+            <!-- </div> -->
+        <!-- </section> -->
         
         <!-- Services section -->
-        <section class="py-5 reveal">
-            <h2 class="section-title mb-4 text-center poppins-bold">Our Services</h2>
+        <section class="py-5">
+            <h2 class="section-title mb-4 text-center montserrat-bold">Dịch vụ</h2>
             <div class="row g-3 mx-1">
                 <!-- Consultancy Card -->
                 <div class="col-lg-4 col-sm-12">
                     <div class="service-card" style="background-image: url('assets/images/service-consultancy.jpg');">
                         <div class="overlay">
-                            <h2 class="service-title poppins-bold">Consultancy</h2>
-                            <p class="service-description roboto-regular">Providing expert advice for every stage of your construction journey.</p>
-                            <a href="#" class="btn btn-cta poppins-semibold">Learn More</a>
+                            <h2 class="service-title be-vietnam-pro-bold">Tư vấn</h2>
+                            <p class="service-description roboto-regular">Cung cấp lời khuyên chuyên nghiệp cho mọi giai đoạn trong hành trình xây dựng của bạn.</p>
+                            <a href="#" class="btn btn-cta be-vietnam-pro-semibold">Tìm hiểu thêm</a>
                         </div>
                     </div>
                 </div>
@@ -86,9 +91,9 @@
                 <div class="col-lg-4 col-sm-12">
                     <div class="service-card" style="background-image: url('assets/images/service-design.png');">
                         <div class="overlay">
-                            <h2 class="service-title poppins-bold">Design</h2>
-                            <p class="service-description roboto-regular">Innovative designs crafted to bring your vision to life.</p>
-                            <a href="#" class="btn btn-cta poppins-semibold">Explore Designs</a>
+                            <h2 class="service-title be-vietnam-pro-bold">Thiết kế</h2>
+                            <p class="service-description roboto-regular">Thiết kế sáng tạo được tạo ra để biến tầm nhìn của bạn thành hiện thực.</p>
+                            <a href="#" class="btn btn-cta be-vietnam-pro-semibold">Khám phá thêm</a>
                         </div>
                     </div>
                 </div>
@@ -96,9 +101,9 @@
                 <div class="col-lg-4 col-sm-12">
                     <div class="service-card" style="background-image: url('assets/images/service-construction.jpg');">
                         <div class="overlay">
-                            <h2 class="service-title poppins-bold">Construction</h2>
-                            <p class="service-description roboto-regular">Building durable structures with quality and precision.</p>
-                            <a href="#" class="btn btn-cta poppins-semibold">Start Building</a>
+                            <h2 class="service-title be-vietnam-pro-bold">Xây dựng</h2>
+                            <p class="service-description roboto-regular">Xây dựng các công trình bền vững với chất lượng và độ chính xác cao.</p>
+                            <a href="#" class="btn btn-cta be-vietnam-pro-semibold">Bắt đầu ngay</a>
                         </div>
                     </div>
                 </div>
@@ -108,7 +113,7 @@
         <!-- Testimonial section -->
         <section class="py-5 theme-bg-gray reveal">
             <div class="container text-center">
-                <h2 class="section-title mb-4 text-center poppins-bold">What Our Clients Say</h2>
+                <!-- <h2 class="section-title mb-4 text-center be-vietnam-pro-bold">What Our Clients Say</h2> -->
                 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
 
                     <div class="carousel-indicators">
@@ -162,16 +167,16 @@
                     <!-- Left Section: Contact Info & Map -->
                     <div class="col-lg-6">
                         <div class="contact-info p-4 shadow-sm">
-                            <h2 class="contact-header">Get in Touch</h2>
-                            <p class="contact-body">We would love to hear from you!</p>
+                            <h2 class="contact-header">Thông tin liên hệ</h2>
+                            <!-- <p class="contact-body">We would love to hear from you!</p> -->
                             <div class="contact-details mt-4">
-                                <p><i class="fas fa-phone-alt text-success me-2"></i><strong>Phone:</strong> <a href="tel:+1234567890" class="text-dark">+1 234 567 890</a></p>
-                                <p><i class="fas fa-envelope text-success me-2"></i><strong>Email:</strong> <a href="mailto:contact@company.com" class="text-dark">contact@company.com</a></p>
-                                <p><i class="fas fa-map-marker-alt text-success me-2"></i><strong>Address:</strong> <br>123 Business St., Suite 456,<br> City, Country</p>
+                                <p><i class="fas fa-phone-alt text-success me-2"></i><strong>SĐT:</strong> <a href="tel:+8483203103" class="text-dark">098 320 31 03</a></p>
+                                <p><i class="fas fa-envelope text-success me-2"></i><strong>Email:</strong> <a href="mailto:contact@company.com" class="text-dark">trangho2610@gmail.com</a></p>
+                                <p><i class="fas fa-map-marker-alt text-success me-2"></i><strong>Địa chỉ:</strong> 488/39 Tân Thới Hiệp 21, Khu phố 3, Phường Tân Thới Hiệp, Quận 12, Thành phố Hồ Chí Minh, Việt Nam</p>
                             </div>
                         </div>
                         <div class="social-links mt-4 text-center">
-                            <h3 class="social-header mb-3">Connect With Us</h3>
+                            <h3 class="social-header mb-3">KẾT NỐI VỚI CHÚNG TÔI</h3>
                             <div class="social-icons">
                                 <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -185,32 +190,32 @@
                     <!-- Right Section: Contact Form -->
                     <div class="col-lg-6">
                         <div class="contact-form p-4 shadow-sm bg-white">
-                            <h2 class="form-header">Contact Us</h2>
+                            <h2 class="form-header">Liên hệ với chúng tôi</h2>
                             <form>
                                 <!-- Name -->
                                 <div class="mb-3">
-                                    <label for="name" class="form-label">Full Name</label>
+                                    <label for="name" class="form-label">Họ và Tên</label>
                                     <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                                 </div>
                                 <!-- Email -->
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
+                                    <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                                 </div>
                                 <!-- Phone -->
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <label for="phone" class="form-label">Số điện thoại</label>
                                     <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
                                 </div>
                                 <!-- Message -->
                                 <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
+                                    <label for="message" class="form-label">Tin nhắn</label>
                                     <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
                                 </div>
                                 <!-- Submit Button -->
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-success px-4 py-2">
-                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                        <i class="fas fa-paper-plane me-2"></i>Gửi
                                     </button>
                                 </div>
                             </form>
@@ -227,30 +232,29 @@
                     <div class="row gy-4">
                         <!-- Left Section: Logo & Description -->
                         <div class="col-lg-4 col-md-6 text-start">
-                            <h2 class="footer-logo text-success">CompanyName</h2>
+                            <h2 class="footer-logo text-success">KHANG AN GIA CO. LTD</h2>
                             <p class="footer-description mt-3">
-                                Building the future with precision and care.
+                                Slogan
                             </p>
                         </div>
         
                         <!-- Center Section: Navigation Links -->
                         <div class="col-lg-4 col-md-6 text-start">
-                            <h5 class="footer-title">Quick Links</h5>
+                            <h5 class="footer-title">Đường dẫn</h5>
                             <ul class="footer-nav list-unstyled mt-3">
-                                <li><a href="#" class="footer-link">About Us</a></li>
-                                <li><a href="#" class="footer-link">Services</a></li>
-                                <li><a href="#" class="footer-link">Projects</a></li>
-                                <li><a href="#" class="footer-link">Blog</a></li>
-                                <li><a href="#" class="footer-link">Contact Us</a></li>
+                                <li><a href="#" class="footer-link">Giới thiệu</a></li>
+                                <li><a href="#" class="footer-link">Dịch vụ</a></li>
+                                <li><a href="#" class="footer-link">Dự án</a></li>
+                                <li><a href="#" class="footer-link">Liên hệ</a></li>
                             </ul>
                         </div>
         
                         <!-- Right Section: Contact & Newsletter -->
                         <div class="col-lg-4 col-md-12 text-start">
-                            <h5 class="footer-title">Contact Us</h5>
-                            <p><i class="fas fa-map-marker-alt text-success me-2"></i>123 Business St., Suite 456, City, Country</p>
-                            <p><i class="fas fa-envelope text-success me-2"></i><a href="mailto:contact@company.com" class="footer-link">contact@company.com</a></p>
-                            <p><i class="fas fa-phone-alt text-success me-2"></i><a href="tel:+1234567890" class="footer-link">+1 234 567 890</a></p>
+                            <h5 class="footer-title">Liên hệ</h5>
+                            <p><i class="fas fa-map-marker-alt text-success me-2"></i> 488/39 Tân Thới Hiệp 21, Khu phố 3, Phường Tân Thới Hiệp, Quận 12, Thành phố Hồ Chí Minh, Việt Nam</p>
+                            <p><i class="fas fa-envelope text-success me-2"></i><a href="mailto:contact@company.com" class="footer-link">trangho2610@gmail.com</a></p>
+                            <p><i class="fas fa-phone-alt text-success me-2"></i><a href="tel:+1234567890" class="footer-link">098 320 31 03</a></p>
                             <div class="social-icons mt-3">
                                 <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
@@ -258,10 +262,10 @@
                                 <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
                             </div>
                             <form class="mt-4">
-                                <label for="newsletter" class="form-label">Subscribe to our newsletter</label>
+                                <label for="newsletter" class="form-label">Đăng ký nhận tin</label>
                                 <div class="input-group">
                                     <input type="email" class="form-control" id="newsletter" placeholder="Enter your email" required>
-                                    <button type="submit" class="btn btn-orange">Subscribe</button>
+                                    <button type="submit" class="btn btn-orange">Đăng ký</button>
                                 </div>
                             </form>
                         </div>
@@ -272,7 +276,7 @@
             <!-- Bottom Section -->
             <div class="footer-bottom py-3 bg-dark">
                 <div class="container d-flex justify-content-between align-items-center">
-                    <p class="mb-0 text-white">&copy; 2024 CompanyName. All Rights Reserved.</p>
+                    <p class="mb-0 text-white">&copy; 2025 KHANG AN GIA CO. LTD. All Rights Reserved.</p>
                     <a href="#" class="back-to-top d-flex justify-content-center align-items-center">
                         <i class="fas fa-arrow-up"></i>
                     </a>
